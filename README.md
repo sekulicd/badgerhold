@@ -1,8 +1,8 @@
 # BadgerHold
 
-[![Build Status](https://travis-ci.org/timshannon/badgerhold.svg?branch=master)](https://travis-ci.org/timshannon/badgerhold) [![GoDoc](https://godoc.org/github.com/timshannon/badgerhold?status.svg)](https://godoc.org/github.com/timshannon/badgerhold) [![Coverage Status](https://coveralls.io/repos/github/timshannon/badgerhold/badge.svg?branch=master)](https://coveralls.io/github/timshannon/badgerhold?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/timshannon/badgerhold)](https://goreportcard.com/report/github.com/timshannon/badgerhold)
+[![Build Status](https://travis-ci.org/sekulicd/badgerhold.svg?branch=master)](https://travis-ci.org/sekulicd/badgerhold) [![GoDoc](https://godoc.org/github.com/sekulicd/badgerhold?status.svg)](https://godoc.org/github.com/sekulicd/badgerhold) [![Coverage Status](https://coveralls.io/repos/github/sekulicd/badgerhold/badge.svg?branch=master)](https://coveralls.io/github/sekulicd/badgerhold?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/sekulicd/badgerhold)](https://goreportcard.com/report/github.com/sekulicd/badgerhold)
 
-BadgerHold is a simple querying and indexing layer on top of a [Badger](https://github.com/dgraph-io/badger) instance. The goal is to create a simple, higher level interface on top of Badger DB that simplifies dealing with Go Types and finding data, but exposes the underlying Badger DB for customizing as you wish. By default the encoding used is Gob, so feel free to use the GobEncoder/Decoder interface for faster serialization. Or, alternately, you can use any serialization you want by supplying encode / decode funcs to the `Options` struct on Open.
+BadgerHold is a simple querying and indexing layer on top of a [Badger](https://github.com/sekulicd/badger) instance. The goal is to create a simple, higher level interface on top of Badger DB that simplifies dealing with Go Types and finding data, but exposes the underlying Badger DB for customizing as you wish. By default the encoding used is Gob, so feel free to use the GobEncoder/Decoder interface for faster serialization. Or, alternately, you can use any serialization you want by supplying encode / decode funcs to the `Options` struct on Open.
 
 One Go Type will be prefixed with it's type name, so you can store multiple types in a single Badger database with conflicts.
 
@@ -212,7 +212,7 @@ for i := range result {
 
 Aggregate queries become especially powerful when combined with the sub-querying capability of `MatchFunc`.
 
-Many more examples of queries can be found in the [find_test.go](https://github.com/timshannon/badgerhold/blob/master/find_test.go) file in this repository.
+Many more examples of queries can be found in the [find_test.go](https://github.com/sekulicd/badgerhold/blob/master/find_test.go) file in this repository.
 
 ## Comparing
 

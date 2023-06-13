@@ -7,12 +7,12 @@ package badgerhold_test
 import (
 	"encoding/binary"
 	"encoding/json"
+	"github.com/sekulicd/badger/v2"
 	"io/ioutil"
 	"os"
 	"testing"
 
-	"github.com/dgraph-io/badger/v2"
-	"github.com/timshannon/badgerhold/v2"
+	"github.com/sekulicd/badgerhold/v2"
 )
 
 type BenchData struct {

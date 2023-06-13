@@ -6,10 +6,9 @@ package badgerhold
 
 import (
 	"bytes"
+	"github.com/sekulicd/badger/v2"
 	"reflect"
 	"sort"
-
-	"github.com/dgraph-io/badger/v2"
 )
 
 const indexPrefix = "_bhIndex"

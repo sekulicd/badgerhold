@@ -6,9 +6,8 @@ package badgerhold
 
 import (
 	"errors"
+	"github.com/sekulicd/badger/v2"
 	"reflect"
-
-	"github.com/dgraph-io/badger/v2"
 )
 
 // ErrKeyExists is the error returned when data is being Inserted for a Key that already exists

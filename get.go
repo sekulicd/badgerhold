@@ -6,9 +6,8 @@ package badgerhold
 
 import (
 	"errors"
+	"github.com/sekulicd/badger/v2"
 	"reflect"
-
-	"github.com/dgraph-io/badger/v2"
 )
 
 // ErrNotFound is returned when no data is found for the given key

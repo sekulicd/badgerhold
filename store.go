@@ -5,11 +5,10 @@
 package badgerhold
 
 import (
+	"github.com/sekulicd/badger/v2"
 	"reflect"
 	"strings"
 	"sync"
-
-	"github.com/dgraph-io/badger/v2"
 )
 
 const (

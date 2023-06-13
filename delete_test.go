@@ -5,11 +5,11 @@
 package badgerhold_test
 
 import (
+	"github.com/sekulicd/badger/v2"
 	"testing"
 	"time"
 
-	"github.com/dgraph-io/badger/v2"
-	"github.com/timshannon/badgerhold/v2"
+	"github.com/sekulicd/badgerhold/v2"
 )
 
 func TestDelete(t *testing.T) {

@@ -6,13 +6,12 @@ package badgerhold
 
 import (
 	"fmt"
+	"github.com/sekulicd/badger/v2"
 	"reflect"
 	"regexp"
 	"sort"
 	"strings"
 	"unicode"
-
-	"github.com/dgraph-io/badger/v2"
 )
 
 const (

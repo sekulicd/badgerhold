@@ -6,12 +6,12 @@ package badgerhold_test
 
 import (
 	"fmt"
+	"github.com/sekulicd/badger/v2"
 	"log"
 	"os"
 	"time"
 
-	"github.com/dgraph-io/badger/v2"
-	"github.com/timshannon/badgerhold/v2"
+	"github.com/sekulicd/badgerhold/v2"
 )
 
 type Item struct {
